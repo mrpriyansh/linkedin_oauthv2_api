@@ -16,9 +16,9 @@
     "mongodb": "^3.5.7",
     "node-fetch": "^2.6.0",
     "request": "^2.88.2",
+    "nodemon": "^2.0.3",
     "superagent": "^5.2.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.3"
   }
 }
