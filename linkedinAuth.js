@@ -1,10 +1,10 @@
 const request= require('superagent');
-const {linkedinClientId, linkedinSecretKey} = require('./config');
+const {linkedinClientId, linkedinSecretKey, apiUrl} = require('./config');
 
 const getAccessToken=(code)=>{
     return request.post('https://www.linkedin.com/oauth/v2/accessToken')
     .send('grant_type=authorization_code')
-    .send(`redirect_uri=http://localhost:4000/auth`)
+    .send(`redirect_uri=${apiUrl}/auth`)
     .send(`client_id=${linkedinClientId}`)
     .send(`client_secret=${linkedinSecretKey}`)
     .send(`code=${code}`)
