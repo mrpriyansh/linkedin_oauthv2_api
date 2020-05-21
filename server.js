@@ -3,7 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const linkedinAuth = require('./linkedinAuth.js');
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 4001;
 
 const app = express();
 
